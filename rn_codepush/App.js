@@ -9,6 +9,11 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
+import { Sentry } from 'react-native-sentry';
+
+Sentry.config('https://8ccd629f1be34b219ca9c0a89da37416@sentry.io/1296675').install();
+
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
